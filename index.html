@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Pets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('https://placekitten.com/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9a9e;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elegant Pets</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Elegant Pets</h2>
+    <p>Where every pet finds a loving home.</p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <img src="https://img1.wsimg.com/isteam/ip/c8eba154-f5e3-4b4f-8dfd-e50a853b5a8e/E6C13BF3-16D1-47EA-B20E-827EA8FE6FB1.jpeg" alt="Cat">
+        <div class="card-content">
+            <h3>Adorable Cats</h3>
+            <p>Cats are independent yet affectionate companions. They require regular grooming and veterinary checkups. Popular breeds include Persian, Siamese, and Maine Coon.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.petmd.com/sites/default/files/2020-11/picture-of-golden-retriever-dog_0.jpg" alt="Dog">
+        <div class="card-content">
+            <h3>Loyal Dogs</h3>
+            <p>Dogs are known for their loyalty and love for their owners. They need regular walks, training, and socialization. Popular breeds include Golden Retriever, Labrador, and German Shepherd.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.thesprucepets.com/thmb/r23RBk0t4DC9UHp2pTzuXLz7Jj4=/3600x0/filters:no_upscale():strip_icc()/popular-small-bird-species-390926-hero-d3d0af7bb6ed4947b0c3c5afb4784456.jpg" alt="Bird">
+        <div class="card-content">
+            <h3>Charming Birds</h3>
+            <p>Birds bring color and melodies to your home. Some species can mimic human speech and sounds. Popular species include Parakeets, Cockatiels, and African Grey Parrots.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Cws2L3RRwGAE51SI3cIVpAHaEo?cb=iwc2&rs=1&pid=ImgDetMain" alt="Rabbit">
+        <div class="card-content">
+            <h3>Cuddly Rabbits</h3>
+            <p>Rabbits are gentle, quiet, and love to hop around. They need space to move and a diet of hay, vegetables, and pellets. Popular breeds include Holland Lop, Netherland Dwarf, and Flemish Giant.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://th.bing.com/th/id/R.7315bb6c06b0c67db5dcf73179e0a99b?rik=7nnHSMwBCZwqnA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5UyWLmYYABs%2fUApQkFFTeYI%2fAAAAAAAANIU%2fQeBiFuaTHEQ%2fs1600%2fHamster6.jpg&ehk=qelB%2bg4Ez08x47TyzptFppBR9Ddf9uxm%2fXhm0q9M1Lc%3d&risl=&pid=ImgRaw&r=0" alt="Hamster">
+        <div class="card-content">
+            <h3>Playful Hamsters</h3>
+            <p>Hamsters are small, nocturnal, and easy to care for. They enjoy exercise wheels and tunnels in their enclosures. Popular species include Syrian, Dwarf Campbell, and Roborovski.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.EjOKXKLPzzjMIwqKKkCs5AHaE7?cb=iwc2&rs=1&pid=ImgDetMain" alt="Fish">
+        <div class="card-content">
+            <h3>Beautiful Fish</h3>
+            <p>Fish provide a peaceful ambiance with their aquatic movements. They require proper tank setup with filtration and temperature control. Popular species include Betta, Guppy, and Neon Tetra.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://th.bing.com/th/id/R.c286b24ccbdc4f75c301d3806489ad74?rik=G8hFUotYIx03IA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-b6qT1WwvlEg%2fUM1Vqg41pFI%2fAAAAAAAABw0%2fAEiwBJj7K8k%2fs1600%2fHawksbill%2bTurtle%2bRed%2bSea.jpg&ehk=29axWxLidT5FnORuWINoEjDWsHENEqIlcMNrJbqh%2b4M%3d&risl=&pid=ImgRaw&r=0" alt="Turtle">
+        <div class="card-content">
+            <h3>Gentle Turtles</h3>
+            <p>Turtles are long-lived and low-maintenance
